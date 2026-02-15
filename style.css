@@ -1,0 +1,217 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden; 
+}
+
+#home {
+    overflow: hidden; 
+    position: relative;
+}
+.logoweb {
+    border-radius: 50%;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* --- 2. Navbar & Mobile Menu --- */
+#menu-btn {
+    transition: all 0.3s ease;
+}
+
+nav.scrolled {
+    background-color: rgba(255, 255, 255, 0.95) !important;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    color: #064e3b !important;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+}
+
+nav.scrolled #menu-btn {
+    color: #064e3b;
+}
+
+/* Logic Mobile Menu Overlay */
+#mobile-menu.active {
+    transform: translateX(0);
+}
+
+#mobile-menu {
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-link {
+    transition: all 300ms;
+    font-weight: 600;
+    letter-spacing: 0.025em;
+}
+
+.mobile-link:hover {
+    color: #34d399;
+}
+
+/* --- 3. Animations & Keyframes --- */
+@keyframes zoom {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.15); }
+    100% { transform: scale(1); }
+}
+
+@keyframes shakeRight {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(10px); }
+}
+
+@keyframes shakeLeft {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(-10px); }
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.z-30 {
+    animation: slideUp 1s ease-out;
+}
+
+.animate-zoom {
+    animation: zoom 25s infinite ease-in-out;
+    will-change: transform; 
+    backface-visibility: hidden;
+}
+
+.animate-shake-right {
+    animation: shakeRight 0.8s infinite;
+}
+
+.animate-shake-left {
+    animation: shakeLeft 0.8s infinite;
+}
+
+/* State Awal Panah Carousel */
+#nextDest i {
+    animation: shakeRight 1.5s infinite ease-in-out;
+}
+
+#prevDest i {
+    animation: shakeLeft 1.5s infinite ease-in-out;
+}
+
+#nextDest:hover i, 
+#prevDest:hover i {
+    animation: none;
+}
+
+/* --- 4. Card, Forms & Interactive Effects --- */
+.group {
+    backface-visibility: hidden;
+    transform: translateZ(0);
+}
+
+.group:hover {
+    border-color: rgba(16, 185, 129, 0.2);
+}
+
+.group:hover img {
+    filter: brightness(0.8) contrast(1.1);
+}
+
+/* Membuat list item muncul satu per satu saat di hover */
+.group:hover ul li {
+    opacity: 1;
+    color: #064e3b; /* Emerald 950 */
+}
+
+/* Animasi khusus pada button */
+.group button:active {
+    transform: scale(0.95);
+}
+
+/* Glassmorphism effect */
+.glass-effect {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Perbaikan Input Focus */
+input:focus, 
+select:focus, 
+textarea:focus {
+    border-color: #059669; /* emerald-600 */
+    box-shadow: 0 0 0 2px rgba(5, 150, 105, 0.2);
+}
+
+/* --- 5. Mobile Responsive Fixes --- */
+@media (max-width: 768px) {
+    /* Navbar di mobile default (sebelum scroll) */
+    #navbar {
+        background-color: transparent; 
+    }
+    
+    /* Search bar di mobile agar tidak terlalu rapat ke pinggir */
+    #home {
+        display: flex;
+        align-items: center; 
+        justify-content: center;
+        min-height: 100vh;
+        padding-top: 0; 
+    }
+
+    #home h1 {
+        font-size: 2.2rem;
+        line-height: 1.1;
+        letter-spacing: -0.02em;
+    }
+
+    /* Memastikan Search Bar di mobile memiliki margin bawah agar tidak mepet layar */
+    #home .absolute.bottom-8 {
+        bottom: 1.5rem;
+    }
+
+    /* Membuat form di mobile lebih compact */
+    #home .max-w-5xl {
+        padding: 1.25rem;
+        border-radius: 1.5rem;
+    }
+
+    /* Search bar di mobile agar tidak terlalu menumpuk */
+    .grid-cols-1 gap-4 {
+        gap: 0.75rem;
+    }
+
+    .fa-times {
+        transform: rotate(90deg);
+        transition: transform 0.3s ease;
+    }
+
+    /* Padding section lebih kecil di mobile */
+    section {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}
+
+
+/* Menangani layar HP yang sangat kecil (iPhone SE dll) */
+@media (max-width: 380px) {
+    #home h1 {
+        font-size: 1.8rem;
+    }
+    
+    .text-2xl {
+        font-size: 1.25rem;
+    }
+}
