@@ -154,4 +154,47 @@ document.addEventListener('DOMContentLoaded', () => {
             }, 1500);
         });
     }
+
+    // video auto play 
+    const videoList = [
+        "assets/terasering.mp4", 
+        "assets/DroneSalib.mp4", 
+        "assets/china.mp4", 
+        "assets/estetikpantai.mp4", 
+        "assets/pura.mp4",
+        "assets/Teluk.mp4"
+    ];
+
+    const videoElement = document.getElementById('bgVideo');
+    let currentVideoIndex = 0;
+    const displayDuration = 9000;
+
+    function playNextVideo() {
+        if (!videoElement) return;
+
+        setTimeout(() => {
+            videoElement.style.opacity = 0;
+        }, displayDuration - 1000); 
+
+        setTimeout(() => {
+            currentVideoIndex++;
+            
+            if (currentVideoIndex >= videoList.length) {
+                currentVideoIndex = 0;
+            }
+
+            videoElement.src = videoList[currentVideoIndex];
+            videoElement.load();
+            
+            videoElement.style.opacity = 1;
+            videoElement.play();
+
+            playNextVideo();
+            
+        }, displayDuration);
+    }
+
+    if (videoElement) {
+        playNextVideo();
+    }
 });
