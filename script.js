@@ -156,44 +156,44 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // video auto play 
-    const videoList = [
-        "assets/terasering.webm", 
-        "assets/DroneSalib.webm", 
-        "assets/china.webm", 
-        "assets/estetikpantai.webm", 
-        "assets/pura.webm"
-    ];
+    // const videoList = [
+    //     "assets/terasering.webm", 
+    //     "assets/DroneSalib.webm", 
+    //     "assets/china.webm", 
+    //     "assets/estetikpantai.webm", 
+    //     "assets/pura.webm"
+    // ];
 
-    const videoElement = document.getElementById('bgVideo');
-    let currentVideoIndex = 0;
-    const displayDuration = 9000;
+    // const videoElement = document.getElementById('bgVideo');
+    // let currentVideoIndex = 0;
+    // const displayDuration = 9000;
 
-    function playNextVideo() {
-        if (!videoElement) return;
+    // function playNextVideo() {
+    //     if (!videoElement) return;
 
-        setTimeout(() => {
-            videoElement.style.opacity = 0;
-        }, displayDuration - 1000); 
+    //     setTimeout(() => {
+    //         videoElement.style.opacity = 0;
+    //     }, displayDuration - 1000); 
 
-        setTimeout(() => {
-            currentVideoIndex++;
+    //     setTimeout(() => {
+    //         currentVideoIndex++;
             
-            if (currentVideoIndex >= videoList.length) {
-                currentVideoIndex = 0;
-            }
+    //         if (currentVideoIndex >= videoList.length) {
+    //             currentVideoIndex = 0;
+    //         }
 
-            videoElement.src = videoList[currentVideoIndex];
-            videoElement.load();
+    //         videoElement.src = videoList[currentVideoIndex];
+    //         videoElement.load();
             
-            videoElement.style.opacity = 1;
-            videoElement.play();
+    //         videoElement.style.opacity = 1;
+    //         videoElement.play();
 
-            playNextVideo();
+    //         playNextVideo();
             
-        }, displayDuration);
-    }
+    //     }, displayDuration);
+    // }
 
-    if (videoElement) {
-        playNextVideo();
-    }
+    // if (videoElement) {
+    //     playNextVideo();
+    // }
 });
