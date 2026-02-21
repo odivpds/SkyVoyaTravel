@@ -5,20 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SkyVoya | Jelajahi Dunia Bersama Kami</title>
     <link class="logoweb" rel="icon" href="assets/logo sky.png" type="image/png">
-    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="font-['Poppins'] bg-gray-50 text-gray-800 overflow-x-hidden">
 
-    <!-- Navbar -->
     <nav id="navbar" class="fixed w-full z-[100] transition-all duration-300 py-4 px-6 md:px-12 flex justify-between items-center text-white">
-        <!-- <div class="text-2xl font-bold tracking-wider relative z-[110]">DIV<span class="text-blue-400">TRAVEL</span></div> -->
-        <img src="assets/logo sky 3.png" alt="SkyVoyage Logo" class="h-10 relative z-[110]">
+        <img loading="lazy"  src="assets/logo sky 3.png" alt="SkyVoyage Logo" class="h-10 relative z-[110]">
         <ul class="hidden md:flex space-x-8 font-medium">
             <li><a href="#login" class="hover:text-blue-300 transition">Login</a></li>
             <li><a href="#home" class="hover:text-blue-300 transition">Home</a></li>
@@ -28,7 +23,6 @@
             <li><a href="#kontak" class="hover:text-blue-300 transition">Kontak</a></li>
         </ul>
 
-        <!-- Mobile Menu Button -->
         <button class="md:hidden text-2xl relative z-[110] focus:outline-none w-10 h-10 flex items-center justify-center" id="menu-btn">
             <i class="fas fa-bars" id="menu-icon"></i>
         </button>
@@ -44,7 +38,6 @@
         <a href="#kontak" class="mobile-link">Kontak</a>
     </div>
 
-    <!-- 1. Hero Section -->
     <section id="home" class="relative min-h-[100vh] flex items-center justify-center text-center text-white overflow-hidden pt-20 pb-64 md:pb-20">
         <div class="absolute inset-0 z-0">
             <video autoplay muted loop playsinline class="absolute top-0 left-0 w-full h-full object-cover">
@@ -83,7 +76,6 @@
         </div>
     </section>
 
-    <!-- 2. Tentang Kami -->
     <section id="about" class="py-20 px-6 md:px-12 bg-white overflow-hidden">
         <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
             <div class="order-2 md:order-1">
@@ -102,13 +94,12 @@
                 <button class="w-full sm:w-auto border-2 border-blue-500 text-blue-500 px-8 py-3 rounded-full font-bold hover:bg-blue-500 hover:text-white transition shadow-sm">Pelajari Selengkapnya</button>
             </div>
             <div class="grid grid-cols-2 gap-4 order-1 md:order-2">
-                <img src="assets/image.png" class="rounded-2xl shadow-lg w-full h-48 md:h-64 object-cover" alt="Team" loading="lazy">
-                <img src="assets/image2.png" class="rounded-2xl shadow-lg w-full h-48 md:h-64 object-cover mt-8 md:mt-12" alt="Award" loading="lazy">
+                <img loading="lazy"  src="assets/image.png" class="rounded-2xl shadow-lg w-full h-48 md:h-64 object-cover" alt="Team" loading="lazy">
+                <img loading="lazy"  src="assets/image2.png" class="rounded-2xl shadow-lg w-full h-48 md:h-64 object-cover mt-8 md:mt-12" alt="Award" loading="lazy">
             </div>
         </div>
     </section>
 
-    <!-- 3. Destinasi (Carousel) -->
     <section id="destinasi" class="py-20 px-6 md:px-12 bg-gray-50 overflow-hidden">
         <div class="max-w-6xl mx-auto">
             <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-10 gap-6">
@@ -129,7 +120,7 @@
             <div id="carouselContainer" class="flex gap-6 overflow-x-auto snap-x snap-mandatory no-scrollbar scroll-smooth pb-10">
                 <div class="min-w-[85%] sm:min-w-[45%] md:min-w-[calc(33.333%-1rem)] snap-start">
                     <div class="group relative overflow-hidden rounded-3xl shadow-lg h-[400px] cursor-pointer">
-                        <img src="assets/bali.png" class="absolute inset-0 w-full h-full object-cover transition duration-700 group-hover:scale-110" alt="Bali" loading="lazy">
+                        <img loading="lazy"  src="assets/bali.png" class="absolute inset-0 w-full h-full object-cover transition duration-700 group-hover:scale-110" alt="Bali" loading="lazy">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent p-8 flex flex-col justify-end text-white">
                             <h3 class="text-2xl font-bold mb-1">Bali, Indonesia</h3>
                             <p class="text-sm text-blue-200 font-medium">Mulai dari Rp 3.500.000</p>
@@ -138,7 +129,7 @@
                 </div>
                 <div class="min-w-[85%] sm:min-w-[45%] md:min-w-[calc(33.333%-1rem)] snap-start">
                     <div class="group relative overflow-hidden rounded-3xl shadow-lg h-[400px] cursor-pointer">
-                        <img src="assets/korea.png" class="absolute inset-0 w-full h-full object-cover transition duration-700 group-hover:scale-110" alt="Korea" loading="lazy">
+                        <img loading="lazy"  src="assets/korea.png" class="absolute inset-0 w-full h-full object-cover transition duration-700 group-hover:scale-110" alt="Korea" loading="lazy">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent p-8 flex flex-col justify-end text-white">
                             <h3 class="text-2xl font-bold mb-1">Korea, Seoul</h3>
                             <p class="text-sm text-blue-300 font-medium">Mulai dari Rp 5.500.000</p>
@@ -147,7 +138,7 @@
                 </div>
                 <div class="min-w-[85%] sm:min-w-[45%] md:min-w-[calc(33.333%-1rem)] snap-start">
                     <div class="group relative overflow-hidden rounded-3xl shadow-lg h-[400px] cursor-pointer">
-                        <img src="assets/lombok.png" class="absolute inset-0 w-full h-full object-cover transition duration-700 group-hover:scale-110" alt="Lombok" loading="lazy">
+                        <img loading="lazy"  src="assets/lombok.png" class="absolute inset-0 w-full h-full object-cover transition duration-700 group-hover:scale-110" alt="Lombok" loading="lazy">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent p-8 flex flex-col justify-end text-white">
                             <h3 class="text-2xl font-bold mb-1">Lombok, Indonesia</h3>
                             <p class="text-sm text-blue-200 font-medium">Mulai dari Rp 4.500.000</p>
@@ -156,7 +147,7 @@
                 </div>
                 <div class="min-w-[85%] sm:min-w-[45%] md:min-w-[calc(33.333%-1rem)] snap-start">
                     <div class="group relative overflow-hidden rounded-3xl shadow-lg h-[400px] cursor-pointer">
-                        <img src="assets/labuanbajo.png" class="absolute inset-0 w-full h-full object-cover transition duration-700 group-hover:scale-110" alt="Labuan Bajo" loading="lazy">
+                        <img loading="lazy"  src="assets/labuanbajo.png" class="absolute inset-0 w-full h-full object-cover transition duration-700 group-hover:scale-110" alt="Labuan Bajo" loading="lazy">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent p-8 flex flex-col justify-end text-white">
                             <h3 class="text-2xl font-bold mb-1">Labuan Bajo, Indonesia</h3>
                             <p class="text-sm text-blue-200 font-medium">Mulai dari Rp 2.500.000</p>
@@ -165,7 +156,7 @@
                 </div>
                 <div class="min-w-[85%] sm:min-w-[45%] md:min-w-[calc(33.333%-1rem)] snap-start">
                     <div class="group relative overflow-hidden rounded-3xl shadow-lg h-[400px] cursor-pointer">
-                        <img src="assets/phuket.png" class="absolute inset-0 w-full h-full object-cover transition duration-700 group-hover:scale-110" alt="Phuket" loading="lazy">
+                        <img loading="lazy"  src="assets/phuket.png" class="absolute inset-0 w-full h-full object-cover transition duration-700 group-hover:scale-110" alt="Phuket" loading="lazy">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent p-8 flex flex-col justify-end text-white">
                             <h3 class="text-2xl font-bold mb-1">Phuket, Thailand</h3>
                             <p class="text-sm text-blue-300 font-medium">Mulai dari Rp 5.500.000</p>
@@ -174,7 +165,7 @@
                 </div>
                 <div class="min-w-[85%] sm:min-w-[45%] md:min-w-[calc(33.333%-1rem)] snap-start">
                     <div class="group relative overflow-hidden rounded-3xl shadow-lg h-[400px] cursor-pointer">
-                        <img src="assets/swiss.png" class="absolute inset-0 w-full h-full object-cover transition duration-700 group-hover:scale-110" alt="Swiss" loading="lazy">
+                        <img loading="lazy"  src="assets/swiss.png" class="absolute inset-0 w-full h-full object-cover transition duration-700 group-hover:scale-110" alt="Swiss" loading="lazy">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent p-8 flex flex-col justify-end text-white">
                             <h3 class="text-2xl font-bold mb-1">Swiss, Eropa</h3>
                             <p class="text-sm text-blue-200 font-medium">Mulai dari Rp 15.500.000</p>
@@ -183,7 +174,7 @@
                 </div>
                 <div class="min-w-[85%] sm:min-w-[45%] md:min-w-[calc(33.333%-1rem)] snap-start">
                     <div class="group relative overflow-hidden rounded-3xl shadow-lg h-[400px] cursor-pointer">
-                        <img src="assets/newzealand.png" class="absolute inset-0 w-full h-full object-cover transition duration-700 group-hover:scale-110" alt="New Zealand" loading="lazy">
+                        <img loading="lazy"  src="assets/newzealand.png" class="absolute inset-0 w-full h-full object-cover transition duration-700 group-hover:scale-110" alt="New Zealand" loading="lazy">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent p-8 flex flex-col justify-end text-white">
                             <h3 class="text-2xl font-bold mb-1">New Zealand</h3>
                             <p class="text-sm text-blue-200 font-medium">Mulai dari Rp 12.500.000</p>
@@ -194,19 +185,17 @@
         </div>
     </section>
 
-    <!-- 4. Paket Wisata -->
     <section id="paket" class="py-20 px-6 md:px-12 bg-white">
         <div class="text-center mb-16">
             <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Paket Wisata Unggulan</h2>
             <div class="w-20 h-1.5 bg-blue-500 mx-auto rounded-full"></div>
         </div>
         <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Paket Card -->
             <div class="group relative bg-white border border-gray-100 rounded-[2rem] overflow-hidden transition-all duration-500 hover:-translate-y-4 hover:shadow-[0_20px_50px_rgba(5,150,105,0.15)] flex flex-col">
                 <div class="relative h-64 overflow-hidden">
                     <div class="absolute inset-0 bg-blue-900/0 group-hover:bg-blue-900/20 transition-all duration-500 z-10"></div>
                     
-                    <img src="assets/tampaksiring.png" 
+                    <img loading="lazy"  src="assets/tampaksiring.png" 
                         class="w-full h-full object-cover transition-all duration-700 transform group-hover:scale-110 group-hover:rotate-2" 
                         alt="Tampaksiring">
                     
@@ -265,7 +254,7 @@
                 <div class="relative h-64 overflow-hidden">
                     <div class="absolute inset-0 bg-blue-900/0 group-hover:bg-blue-900/20 transition-all duration-500 z-10"></div>
                     
-                    <img src="assets/batur.png" 
+                    <img loading="lazy"  src="assets/batur.png" 
                         class="w-full h-full object-cover transition-all duration-700 transform group-hover:scale-110 group-hover:rotate-2" 
                         alt="Labuan Bajo">
                     
@@ -324,7 +313,7 @@
                 <div class="relative h-64 overflow-hidden">
                     <div class="absolute inset-0 bg-blue-900/0 group-hover:bg-blue-900/20 transition-all duration-500 z-10"></div>
                     
-                    <img src="assets/jatiluwih.png" 
+                    <img loading="lazy"  src="assets/jatiluwih.png" 
                         class="w-full h-full object-cover transition-all duration-700 transform group-hover:scale-110 group-hover:rotate-2" 
                         alt="Jatiluwih">
                     
@@ -382,7 +371,6 @@
         </div>
     </section>
 
-    <!-- 7. Kontak & Dukungan -->
     <section id="kontak" class="py-20 px-6 md:px-12 bg-blue-900 text-white overflow-hidden">
         <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 md:gap-20">
             <div>
@@ -432,12 +420,10 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="bg-gray-950 text-white py-16 px-6 md:px-12">
         <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12">
             <div class="col-span-1 md:col-span-2">
-                <!-- <div class="text-3xl font-bold mb-6 italic tracking-tighter">DIV<span class="text-blue-400">TRAVEL</span></div> -->
-                <img src="assets/logo sky 3.png" alt="SkyVoyage Logo" class="h-10 relative z-[110]">
+                <img loading="lazy"  src="assets/logo sky 3.png" alt="SkyVoyage Logo" class="h-10 relative z-[110]">
                 <p class="text-gray-400 max-w-sm mb-8 leading-relaxed">Partner terpercaya Anda untuk menjelajahi keindahan dunia dengan kenyamanan dan keamanan terjamin selama perjalanan.</p>
                 <div class="flex space-x-5">
                     <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-500 transition" title="Instagram"><i class="fab fa-instagram"></i></a>
@@ -471,7 +457,6 @@
 
     <script src="script.js"></script>
 
-    <!-- Login Modal Overlay -->
     <div id="loginModal" class="fixed inset-0 z-[1000] hidden flex items-center justify-center px-4 py-6">
         <div class="absolute inset-0 bg-blue-950/60 backdrop-blur-sm"></div>
         <div class="relative bg-gray-50 w-full max-w-5xl rounded-[3rem] shadow-2xl overflow-hidden transform transition-all duration-300 scale-95 opacity-0 flex flex-col lg:flex-row h-auto lg:h-[650px]" id="loginCard">
@@ -481,7 +466,7 @@
             <div id="leftSide" class="w-full lg:w-[45%] bg-white p-8 md:p-12 flex flex-col justify-center relative rounded-[3rem] lg:rounded-r-none shadow-xl lg:shadow-none side-left-hidden">
                 
                 <div class="form-element flex flex-col items-center text-center mb-8" style="transition-delay: 0.1s;">
-                    <img src="assets/logo sky.png" alt="SkyVoyage Logo" class="h-16 w-auto mb-4">
+                    <img loading="lazy"  src="assets/logo sky.png" alt="SkyVoyage Logo" class="h-16 w-auto mb-4">
                     <h2 class="text-2xl font-bold text-gray-800">Welcome Back, Traveler!</h2>
                 </div>
 
@@ -516,7 +501,7 @@
                     <p class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-4">Or Continue With</p>
                     <div class="flex space-x-4 justify-center">
                         <button class="w-1/2 flex justify-center items-center py-2.5 bg-gray-50 rounded-xl border border-gray-100 hover:bg-white transition group">
-                            <img src="https://www.svgrepo.com/show/475656/google-color.svg" class="w-5 h-5" alt="Google">
+                            <img loading="lazy"  src="https://www.svgrepo.com/show/475656/google-color.svg" class="w-5 h-5" alt="Google">
                         </button>
                         <button class="w-1/2 flex justify-center items-center py-2.5 bg-gray-50 rounded-xl border border-gray-100 hover:bg-white transition group">
                             <i class="fab fa-facebook-f text-blue-600"></i>
@@ -541,7 +526,7 @@
                 </div>
 
                 <div class="relative z-10 w-full max-w-md transform transition-transform duration-700 hover:scale-105">
-                    <img src="assets/0117.gif" alt="Beach Animation" class="w-full h-auto rounded-3xl">
+                    <img loading="lazy"  src="assets/0117.gif" alt="Beach Animation" class="w-full h-auto rounded-3xl">
                 </div>
 
                 <div class="absolute bottom-10 left-10 w-20 h-20 bg-blue-200/20 rounded-full blur-2xl"></div>
